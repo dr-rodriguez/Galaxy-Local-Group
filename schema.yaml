@@ -1515,14 +1515,14 @@ tables:
       description: Position angle
       fits:tunit: deg
       ivoa:ucd: pos.posAng
-    - name: position_angle_deg_upper
-      "@id": "#Morphology.position_angle_deg_upper"
+    - name: position_angle_error_upper
+      "@id": "#Morphology.position_angle_error_upper"
       datatype: double
       description: Upper uncertainty of the position angle
       fits:tunit: deg
       ivoa:ucd: stat.error;pos.posAng
-    - name: position_angle_deg_lower
-      "@id": "#Morphology.position_angle_deg_lower"
+    - name: position_angle_error_lower
+      "@id": "#Morphology.position_angle_error_lower"
       datatype: double
       description: Lower uncertainty of the position angle
       fits:tunit: deg
@@ -1532,13 +1532,13 @@ tables:
       datatype: double
       description: Projected ellipticity, e=1-b/a
       ivoa:ucd: phys.angSize
-    - name: ellipticity_upper
-      "@id": "#Morphology.ellipticity_upper"
+    - name: ellipticity_error_upper
+      "@id": "#Morphology.ellipticity_error_upper"
       datatype: double
       description: Upper uncertainty of the projected ellipticity
       ivoa:ucd: stat.error;phys.angSize
-    - name: ellipticity_lower
-      "@id": "#Morphology.ellipticity_lower"
+    - name: ellipticity_error_lower
+      "@id": "#Morphology.ellipticity_error_lower"
       datatype: double
       description: Lower uncertainty of the projected ellipticity
       ivoa:ucd: stat.error;phys.angSize
@@ -1548,14 +1548,14 @@ tables:
       description: Half-light radius measured on major axis
       fits:tunit: arcmin
       ivoa:ucd: phys.angSize
-    - name: half_light_radius_arcmin_upper
-      "@id": "#Morphology.half_light_radius_arcmin_upper"
+    - name: half_light_radius_error_upper
+      "@id": "#Morphology.half_light_radius_error_upper"
       datatype: double
       description: Upper uncertainty of the half-light radius
       fits:tunit: arcmin
       ivoa:ucd: stat.error;phys.angSize
-    - name: half_light_radius_arcmin_lower
-      "@id": "#Morphology.half_light_radius_arcmin_lower"
+    - name: half_light_radius_error_lower
+      "@id": "#Morphology.half_light_radius_error_lower"
       datatype: double
       description: Lower uncertainty of the half-light radius
       fits:tunit: arcmin
