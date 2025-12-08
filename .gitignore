@@ -1,0 +1,26 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+.python-version
+uv.lock
+
+# IDEs
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+
+# Other
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local

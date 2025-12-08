@@ -1,0 +1,13 @@
+[project]
+name = "galaxy-local-group"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "astropy>=7.2.0",
+]
+
+[[tool.uv.index]]
+url = "https://bytesalad.stsci.edu/artifactory/api/pypi/mast-pypi/simple"
+default = true
