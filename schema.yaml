@@ -790,6 +790,18 @@ tables:
       description: Uncertainty of the parallax value
       fits:tunit: mas
       ivoa:ucd: stat.error;pos.parallax
+    - name: parallax_error_upper
+      "@id": "#Parallaxes.parallax_error_upper"
+      datatype: double
+      description: Upper uncertainty of the parallax value
+      fits:tunit: mas
+      ivoa:ucd: stat.error;pos.parallax
+    - name: parallax_error_lower
+      "@id": "#Parallaxes.parallax_error_lower"
+      datatype: double
+      description: Lower uncertainty of the parallax value
+      fits:tunit: mas
+      ivoa:ucd: stat.error;pos.parallax
     - name: adopted
       "@id": "#Parallaxes.adopted"
       datatype: boolean
@@ -965,6 +977,18 @@ tables:
       description: Uncertainty of the projected separation
       fits:tunit: arcsec
       ivoa:ucd: stat.error;pos.angDistance
+    - name: projected_separation_error_upper
+      "@id": "#CompanionRelationships.projected_separation_error_upper"
+      datatype: double
+      description: Upper uncertainty of the projected separation
+      fits:tunit: arcsec
+      ivoa:ucd: stat.error;pos.angDistance
+    - name: projected_separation_error_lower
+      "@id": "#CompanionRelationships.projected_separation_error_lower"
+      datatype: double
+      description: Lower uncertainty of the projected separation
+      fits:tunit: arcsec
+      ivoa:ucd: stat.error;pos.angDistance
     - name: comments
       "@id": "#CompanionRelationships.comments"
       datatype: string
@@ -1057,6 +1081,14 @@ tables:
       "@id": "#CompanionParameters.error"
       datatype: double
       description: Uncertainty of the parameter value
+    - name: error_upper
+      "@id": "#CompanionParameters.error_upper"
+      datatype: double
+      description: Upper uncertainty of the parameter value
+    - name: error_lower
+      "@id": "#CompanionParameters.error_lower"
+      datatype: double
+      description: Lower uncertainty of the parameter value
     - name: unit
       "@id": "#CompanionParameters.unit"
       datatype: string
@@ -1397,6 +1429,7 @@ tables:
       Note that *parameter* is linked to the Parameters table. "
     primaryKey: 
     - "#ModeledParameters.source"
+    - "#ModeledParameters.model"
     - "#ModeledParameters.parameter"
     - "#ModeledParameters.reference"
 
@@ -1408,6 +1441,12 @@ tables:
       description: Unique identifier for the source; links to Sources table
       ivoa:ucd: meta.id;meta.main
       nullable: false
+    - name: model
+      "@id": "#ModeledParameters.model"
+      datatype: string
+      length: 30
+      description: Model name
+      ivoa:ucd: meta.id
     - name: parameter
       "@id": "#ModeledParameters.parameter"
       datatype: string
@@ -1463,6 +1502,7 @@ tables:
         description: Primary key for ModeledParameters table
         columns: 
         - "#ModeledParameters.source"
+        - "#ModeledParameters.model"
         - "#ModeledParameters.parameter"
         - "#ModeledParameters.reference"
 
@@ -1493,119 +1533,6 @@ tables:
         - "#ParameterList.parameter"
 
 
-  - name: Morphology
-    "@id": "#Morphology"
-    description: "The Morphology table contains morphological parameters for sources listed in the Sources table.
-      The combination of *source* and *reference* is expected to be unique."
-    primaryKey: 
-    - "#Morphology.source"
-    - "#Morphology.reference"
-
-    columns:
-    - name: source
-      "@id": "#Morphology.source"
-      datatype: string
-      length: 50
-      description: Unique identifier for the source; links to Sources table
-      ivoa:ucd: meta.id;meta.main
-      nullable: false
-    - name: position_angle_deg
-      "@id": "#Morphology.position_angle_deg"
-      datatype: double
-      description: Position angle
-      fits:tunit: deg
-      ivoa:ucd: pos.posAng
-    - name: position_angle_error_upper
-      "@id": "#Morphology.position_angle_error_upper"
-      datatype: double
-      description: Upper uncertainty of the position angle
-      fits:tunit: deg
-      ivoa:ucd: stat.error;pos.posAng
-    - name: position_angle_error_lower
-      "@id": "#Morphology.position_angle_error_lower"
-      datatype: double
-      description: Lower uncertainty of the position angle
-      fits:tunit: deg
-      ivoa:ucd: stat.error;pos.posAng
-    - name: ellipticity
-      "@id": "#Morphology.ellipticity"
-      datatype: double
-      description: Projected ellipticity, e=1-b/a
-      ivoa:ucd: phys.angSize
-    - name: ellipticity_error_upper
-      "@id": "#Morphology.ellipticity_error_upper"
-      datatype: double
-      description: Upper uncertainty of the projected ellipticity
-      ivoa:ucd: stat.error;phys.angSize
-    - name: ellipticity_error_lower
-      "@id": "#Morphology.ellipticity_error_lower"
-      datatype: double
-      description: Lower uncertainty of the projected ellipticity
-      ivoa:ucd: stat.error;phys.angSize
-    - name: half_light_radius_arcmin
-      "@id": "#Morphology.half_light_radius_arcmin"
-      datatype: double
-      description: Half-light radius measured on major axis
-      fits:tunit: arcmin
-      ivoa:ucd: phys.angSize
-    - name: half_light_radius_error_upper
-      "@id": "#Morphology.half_light_radius_error_upper"
-      datatype: double
-      description: Upper uncertainty of the half-light radius
-      fits:tunit: arcmin
-      ivoa:ucd: stat.error;phys.angSize
-    - name: half_light_radius_error_lower
-      "@id": "#Morphology.half_light_radius_error_lower"
-      datatype: double
-      description: Lower uncertainty of the half-light radius
-      fits:tunit: arcmin
-      ivoa:ucd: stat.error;phys.angSize
-    - name: adopted
-      "@id": "#Morphology.adopted"
-      datatype: boolean
-      description: Flag to indicate if this is the adopted entry
-      ivoa:ucd: meta.code
-    - name: comments
-      "@id": "#Morphology.comments"
-      datatype: string
-      length: 100
-      description: Free form comments
-      ivoa:ucd: meta.note
-    - name: reference
-      "@id": "#Morphology.reference"
-      datatype: string
-      length: 30
-      description: Reference; links to Publications table
-      ivoa:ucd: meta.ref
-      nullable: false
-
-    indexes:
-      - name: PK_Morphology
-        "@id": "#PK_Morphology"
-        description: Primary key for Morphology table
-        columns: 
-        - "#Morphology.source"
-        - "#Morphology.reference"
-
-    constraints:
-      - name: Morphology_source_Sources_source
-        "@type": "ForeignKey"
-        "@id": "#FK_Morphology_source_Sources_source"
-        description: Link Morphology source to Sources table
-        columns:
-        - "#Morphology.source"
-        referencedColumns:
-        - "#Sources.source"
-      - name: Morphology_reference_Publications_reference
-        "@type": "ForeignKey"
-        "@id": "#FK_Morphology_reference_Publications_reference"
-        description: Link Morphology reference to Publications table
-        columns:
-        - "#Morphology.reference"
-        referencedColumns:
-        - "#Publications.reference"
-
-
   - name: RotationalParameters
     "@id": "#RotationalParameters"
     description: Rotational parameters for sources
@@ -1633,6 +1560,18 @@ tables:
       description: Uncertainty of the rotational period
       fits:tunit: hr
       ivoa:ucd: stat.error;time.period
+    - name: period_error_upper
+      "@id": "#RotationalParameters.period_error_upper"
+      datatype: double
+      description: Upper uncertainty of the rotational period
+      fits:tunit: hr
+      ivoa:ucd: stat.error;time.period
+    - name: period_error_lower
+      "@id": "#RotationalParameters.period_error_lower"
+      datatype: double
+      description: Lower uncertainty of the rotational period
+      fits:tunit: hr
+      ivoa:ucd: stat.error;time.period
     - name: v_sin_i_kms
       "@id": "#RotationalParameters.v_sin_i_kms"
       datatype: double
@@ -1645,6 +1584,18 @@ tables:
       description: Uncertainty of the projected rotational velocity
       fits:tunit: km/s
       ivoa:ucd: stat.error;phys.veloc.rotat
+    - name: v_sin_i_error_upper
+      "@id": "#RotationalParameters.v_sin_i_error_upper"
+      datatype: double
+      description: Upper uncertainty of the projected rotational velocity
+      fits:tunit: km/s
+      ivoa:ucd: stat.error;phys.veloc.rotat
+    - name: v_sin_i_error_lower
+      "@id": "#RotationalParameters.v_sin_i_error_lower"
+      datatype: double
+      description: Lower uncertainty of the projected rotational velocity
+      fits:tunit: km/s
+      ivoa:ucd: stat.error;phys.veloc.rotat
     - name: inclination
       "@id": "#RotationalParameters.inclination"
       datatype: double
@@ -1655,6 +1606,18 @@ tables:
       "@id": "#RotationalParameters.inclination_error"
       datatype: double
       description: Uncertainty of the inclination
+      fits:tunit: deg
+      ivoa:ucd: stat.error;src.orbital.inclination
+    - name: inclination_error_upper
+      "@id": "#RotationalParameters.inclination_error_upper"
+      datatype: double
+      description: Upper uncertainty of the inclination
+      fits:tunit: deg
+      ivoa:ucd: stat.error;src.orbital.inclination
+    - name: inclination_error_lower
+      "@id": "#RotationalParameters.inclination_error_lower"
+      datatype: double
+      description: Lower uncertainty of the inclination
       fits:tunit: deg
       ivoa:ucd: stat.error;src.orbital.inclination
     - name: adopted
@@ -1701,6 +1664,140 @@ tables:
         - "#RotationalParameters.reference"
         referencedColumns:
         - "#Publications.reference"
+
+
+  - name: Morphology
+    "@id": "#Morphology"
+    description: "The Morphology table contains morphological measurements for sources listed in the Sources table. 
+      The combination of *source* and *reference* is expected to be unique."
+    primaryKey: 
+    - "#Morphology.source"
+    - "#Morphology.reference"
+
+    columns:
+    - name: source
+      "@id": "#Morphology.source"
+      datatype: string
+      length: 50
+      description: Unique identifier for a source; links to Sources table
+      ivoa:ucd: meta.id;meta.main
+      nullable: false
+    - name: position_angle_deg
+      "@id": "#Morphology.position_angle_deg"
+      datatype: double
+      description: Position angle of the source
+      fits:tunit: deg
+      ivoa:ucd: pos.posAng
+    - name: position_angle_error
+      "@id": "#Morphology.position_angle_error"
+      datatype: double
+      description: Uncertainty of the position angle
+      fits:tunit: deg
+      ivoa:ucd: stat.error;pos.posAng
+    - name: position_angle_error_upper
+      "@id": "#Morphology.position_angle_error_upper"
+      datatype: double
+      description: Upper uncertainty of the position angle
+      fits:tunit: deg
+      ivoa:ucd: stat.error;pos.posAng
+    - name: position_angle_error_lower
+      "@id": "#Morphology.position_angle_error_lower"
+      datatype: double
+      description: Lower uncertainty of the position angle
+      fits:tunit: deg
+      ivoa:ucd: stat.error;pos.posAng
+    - name: ellipticity
+      "@id": "#Morphology.ellipticity"
+      datatype: double
+      description: Ellipticity of the source (0-1)
+      ivoa:ucd: phys.size.axisRatio
+    - name: ellipticity_error
+      "@id": "#Morphology.ellipticity_error"
+      datatype: double
+      description: Uncertainty of the ellipticity
+      ivoa:ucd: stat.error;phys.size.axisRatio
+    - name: ellipticity_error_upper
+      "@id": "#Morphology.ellipticity_error_upper"
+      datatype: double
+      description: Upper uncertainty of the ellipticity
+      ivoa:ucd: stat.error;phys.size.axisRatio
+    - name: ellipticity_error_lower
+      "@id": "#Morphology.ellipticity_error_lower"
+      datatype: double
+      description: Lower uncertainty of the ellipticity
+      ivoa:ucd: stat.error;phys.size.axisRatio
+    - name: half_light_radius_arcmin
+      "@id": "#Morphology.half_light_radius_arcmin"
+      datatype: double
+      description: Half-light radius of the source
+      fits:tunit: arcmin
+      ivoa:ucd: phys.size
+    - name: half_light_radius_error
+      "@id": "#Morphology.half_light_radius_error"
+      datatype: double
+      description: Uncertainty of the half-light radius
+      fits:tunit: arcmin
+      ivoa:ucd: stat.error;phys.size
+    - name: half_light_radius_error_upper
+      "@id": "#Morphology.half_light_radius_error_upper"
+      datatype: double
+      description: Upper uncertainty of the half-light radius
+      fits:tunit: arcmin
+      ivoa:ucd: stat.error;phys.size
+    - name: half_light_radius_error_lower
+      "@id": "#Morphology.half_light_radius_error_lower"
+      datatype: double
+      description: Lower uncertainty of the half-light radius
+      fits:tunit: arcmin
+      ivoa:ucd: stat.error;phys.size
+    - name: adopted
+      "@id": "#Morphology.adopted"
+      datatype: boolean
+      description: Flag to indicate if this is the adopted entry
+      ivoa:ucd: meta.code
+    - name: comments
+      "@id": "#Morphology.comments"
+      datatype: string
+      length: 100
+      description: Free form comments
+      ivoa:ucd: meta.note
+    - name: reference
+      "@id": "#Morphology.reference"
+      datatype: string
+      length: 30
+      description: Reference; links to Publications table
+      ivoa:ucd: meta.ref
+      nullable: false
+
+    indexes:
+      - name: PK_Morphology
+        "@id": "#PK_Morphology"
+        description: Primary key for Morphology table
+        columns: 
+        - "#Morphology.source"
+        - "#Morphology.reference"
+    constraints:
+      - name: Morphology_source_Sources_source
+        "@type": "ForeignKey"
+        "@id": "#FK_Morphology_source_Sources_source"
+        description: Link Morphology source to Sources table
+        columns:
+        - "#Morphology.source"
+        referencedColumns:
+        - "#Sources.source"
+      - name: Morphology_reference_Publications_reference
+        "@type": "ForeignKey"
+        "@id": "#FK_Morphology_reference_Publications_reference"
+        description: Link Morphology reference to Publications table
+        columns:
+        - "#Morphology.reference"
+        referencedColumns:
+        - "#Publications.reference"
+      - name: check_ellipticity
+        "@type": Check
+        "@id": "#Morphology_check_ellipticity"
+        description: Validate ellipticity range
+        expression: ellipticity >= 0 AND ellipticity <= 1
 
 
   - name: Spectra
