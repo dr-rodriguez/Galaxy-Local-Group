@@ -27,3 +27,4 @@ uv.lock
 
 # Project-specific files
 *.fits
+*.sqlite

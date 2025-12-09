@@ -1,6 +1,6 @@
 ---
-name: galaxy-local-group
-"@id": "#galaxy-local-group"
+name: galaxy_local_group
+"@id": "#galaxy_local_group"
 description: "Database for the Local Group of Galaxies"
 
 ######################################################

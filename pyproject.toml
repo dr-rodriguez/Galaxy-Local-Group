@@ -5,9 +5,24 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "astrodb-utils>=1.1.0",
+    "astrodbkit>=2.5",
     "astropy>=7.2.0",
 ]
 
-[[tool.uv.index]]
-url = "https://bytesalad.stsci.edu/artifactory/api/pypi/mast-pypi/simple"
-default = true
+[project.optional-dependencies]
+test = [
+    "pytest"
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+norecursedirs = "data"
+addopts = "-ra" # show extra summary info
+log_cli = false # override on the command line with: pytest -o log_cli=1
+log_cli_level= "INFO"  # pytest -o log_cli=1 --log-cli-level=DEBUG
+log_cli_format = "%(name)-15s: %(levelname)s %(message)s"  
+filterwarnings = [
+    "ignore:.*Parsing dates*:DeprecationWarning",  # ignore deprecation warnings from dateparser
+    "ignore::astroquery.exceptions.NoResultsWarning" # ignore astroquery warnings
+]
