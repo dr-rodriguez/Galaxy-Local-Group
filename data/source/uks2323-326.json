@@ -1,0 +1,104 @@
+{
+    "Sources": [
+        {
+            "source": "UKS2323-326",
+            "ra_deg": 351.61458333333326,
+            "dec_deg": -32.388888888888886,
+            "epoch_year": null,
+            "equinox": "ICRS",
+            "reference": "McConnachie12",
+            "other_references": null,
+            "comments": null
+        }
+    ],
+    "ModeledParameters": [
+        {
+            "model": null,
+            "parameter": "MHI",
+            "value": 17.0,
+            "error": null,
+            "error_upper": null,
+            "error_lower": null,
+            "unit": null,
+            "comments": null,
+            "reference": "McConnachie12"
+        },
+        {
+            "model": null,
+            "parameter": "distance modulus",
+            "value": 26.719999313354492,
+            "error": null,
+            "error_upper": 0.09000000357627869,
+            "error_lower": 0.09000000357627869,
+            "unit": null,
+            "comments": null,
+            "reference": "McConnachie12"
+        },
+        {
+            "model": null,
+            "parameter": "metallicity",
+            "value": -1.6799999475479126,
+            "error": null,
+            "error_upper": 0.1899999976158142,
+            "error_lower": 0.1899999976158142,
+            "unit": null,
+            "comments": null,
+            "reference": "McConnachie12"
+        },
+        {
+            "model": null,
+            "parameter": "muVo",
+            "value": 22.899999618530273,
+            "error": null,
+            "error_upper": 0.20000000298023224,
+            "error_lower": 0.20000000298023224,
+            "unit": null,
+            "comments": null,
+            "reference": "McConnachie12"
+        }
+    ],
+    "Morphology": [
+        {
+            "position_angle_deg": 120.0,
+            "position_angle_error": null,
+            "position_angle_error_upper": 4.0,
+            "position_angle_error_lower": 4.0,
+            "ellipticity": 0.10000000149011612,
+            "ellipticity_error": null,
+            "ellipticity_error_upper": 0.009999999776482582,
+            "ellipticity_error_lower": 0.009999999776482582,
+            "half_light_radius_arcmin": 0.8999999761581421,
+            "half_light_radius_error": null,
+            "half_light_radius_error_upper": 0.10000000149011612,
+            "half_light_radius_error_lower": 0.10000000149011612,
+            "adopted": true,
+            "comments": null,
+            "reference": "McConnachie12"
+        }
+    ],
+    "Photometry": [
+        {
+            "band": "Generic/Johnson.V",
+            "magnitude": 13.5,
+            "magnitude_error": null,
+            "magnitude_error_upper": 0.20000000298023224,
+            "magnitude_error_lower": 0.20000000298023224,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "McConnachie12",
+            "regime": null
+        }
+    ],
+    "RadialVelocities": [
+        {
+            "rv_kms": 62.0,
+            "rv_error": null,
+            "rv_error_upper": 5.0,
+            "rv_error_lower": 5.0,
+            "adopted": true,
+            "comments": null,
+            "reference": "McConnachie12"
+        }
+    ]
+}

@@ -1,0 +1,130 @@
+{
+    "Sources": [
+        {
+            "source": "Eridanus2",
+            "ra_deg": 56.087916666666665,
+            "dec_deg": -43.53333333333333,
+            "epoch_year": null,
+            "equinox": "ICRS",
+            "reference": "McConnachie12",
+            "other_references": null,
+            "comments": null
+        }
+    ],
+    "ModeledParameters": [
+        {
+            "model": null,
+            "parameter": "distance modulus",
+            "value": 22.899999618530273,
+            "error": null,
+            "error_upper": 0.20000000298023224,
+            "error_lower": 0.20000000298023224,
+            "unit": null,
+            "comments": null,
+            "reference": "McConnachie12"
+        },
+        {
+            "model": null,
+            "parameter": "metallicity",
+            "value": -2.380000114440918,
+            "error": null,
+            "error_upper": 0.12999999523162842,
+            "error_lower": 0.12999999523162842,
+            "unit": null,
+            "comments": null,
+            "reference": "McConnachie12"
+        },
+        {
+            "model": null,
+            "parameter": "muVo",
+            "value": 26.6299991607666,
+            "error": null,
+            "error_upper": 0.30000001192092896,
+            "error_lower": 0.30000001192092896,
+            "unit": null,
+            "comments": null,
+            "reference": "McConnachie12"
+        },
+        {
+            "model": null,
+            "parameter": "sigma_s",
+            "value": 6.900000095367432,
+            "error": null,
+            "error_upper": 1.2000000476837158,
+            "error_lower": 0.8999999761581421,
+            "unit": null,
+            "comments": null,
+            "reference": "McConnachie12"
+        },
+        {
+            "model": null,
+            "parameter": "vrot_s",
+            "value": 0.0,
+            "error": null,
+            "error_upper": 0.0,
+            "error_lower": 0.0,
+            "unit": null,
+            "comments": null,
+            "reference": "McConnachie12"
+        }
+    ],
+    "Morphology": [
+        {
+            "position_angle_deg": 82.0,
+            "position_angle_error": null,
+            "position_angle_error_upper": 7.0,
+            "position_angle_error_lower": 7.0,
+            "ellipticity": 0.3700000047683716,
+            "ellipticity_error": null,
+            "ellipticity_error_upper": 0.05999999865889549,
+            "ellipticity_error_lower": 0.05999999865889549,
+            "half_light_radius_arcmin": 1.809999942779541,
+            "half_light_radius_error": null,
+            "half_light_radius_error_upper": 0.17000000178813934,
+            "half_light_radius_error_lower": 0.17000000178813934,
+            "adopted": true,
+            "comments": null,
+            "reference": "McConnachie12"
+        }
+    ],
+    "Photometry": [
+        {
+            "band": "Generic/Johnson.V",
+            "magnitude": 15.6899995803833,
+            "magnitude_error": null,
+            "magnitude_error_upper": 0.09000000357627869,
+            "magnitude_error_lower": 0.09000000357627869,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "McConnachie12",
+            "regime": null
+        }
+    ],
+    "ProperMotions": [
+        {
+            "pm_ra": 0.20999999344348907,
+            "pm_ra_error": null,
+            "pm_ra_error_upper": 0.09000000357627869,
+            "pm_ra_error_lower": 0.09000000357627869,
+            "pm_dec": -0.05000000074505806,
+            "pm_dec_error": null,
+            "pm_dec_error_upper": 0.10999999940395355,
+            "pm_dec_error_lower": 0.10999999940395355,
+            "adopted": true,
+            "comments": null,
+            "reference": "McConnachie12"
+        }
+    ],
+    "RadialVelocities": [
+        {
+            "rv_kms": 75.5999984741211,
+            "rv_error": null,
+            "rv_error_upper": 3.299999952316284,
+            "rv_error_lower": 3.299999952316284,
+            "adopted": true,
+            "comments": null,
+            "reference": "McConnachie12"
+        }
+    ]
+}

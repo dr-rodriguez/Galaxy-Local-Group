@@ -1,0 +1,86 @@
+{
+    "Sources": [
+        {
+            "source": "DESJ0225+0304",
+            "ra_deg": 36.426666666666655,
+            "dec_deg": 3.0694722222222226,
+            "epoch_year": null,
+            "equinox": "ICRS",
+            "reference": "McConnachie12",
+            "other_references": null,
+            "comments": null
+        }
+    ],
+    "ModeledParameters": [
+        {
+            "model": null,
+            "parameter": "distance modulus",
+            "value": 16.8799991607666,
+            "error": null,
+            "error_upper": 0.05999999865889549,
+            "error_lower": 0.05000000074505806,
+            "unit": null,
+            "comments": null,
+            "reference": "McConnachie12"
+        },
+        {
+            "model": null,
+            "parameter": "metallicity",
+            "value": -1.2599999904632568,
+            "error": null,
+            "error_upper": 0.029999999329447746,
+            "error_lower": 0.029999999329447746,
+            "unit": null,
+            "comments": null,
+            "reference": "McConnachie12"
+        }
+    ],
+    "Morphology": [
+        {
+            "position_angle_deg": 31.25,
+            "position_angle_error": null,
+            "position_angle_error_upper": 11.479999542236328,
+            "position_angle_error_lower": 13.390000343322754,
+            "ellipticity": 0.6100000143051147,
+            "ellipticity_error": null,
+            "ellipticity_error_upper": 0.14000000059604645,
+            "ellipticity_error_lower": 0.23000000417232513,
+            "half_light_radius_arcmin": 2.680000066757202,
+            "half_light_radius_error": null,
+            "half_light_radius_error_upper": 1.3300000429153442,
+            "half_light_radius_error_lower": 0.699999988079071,
+            "adopted": true,
+            "comments": null,
+            "reference": "McConnachie12"
+        }
+    ],
+    "Photometry": [
+        {
+            "band": "Generic/Johnson.V",
+            "magnitude": 15.779999732971191,
+            "magnitude_error": null,
+            "magnitude_error_upper": 0.5,
+            "magnitude_error_lower": 0.30000001192092896,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "McConnachie12",
+            "regime": null
+        }
+    ],
+    "ProperMotions": [
+        {
+            "pm_ra": 1.0700000524520874,
+            "pm_ra_error": null,
+            "pm_ra_error_upper": 0.5799999833106995,
+            "pm_ra_error_lower": 0.5600000023841858,
+            "pm_dec": -0.20999999344348907,
+            "pm_dec_error": null,
+            "pm_dec_error_upper": 0.47999998927116394,
+            "pm_dec_error_lower": 1.2100000381469727,
+            "adopted": true,
+            "comments": null,
+            "reference": "McConnachie12"
+        }
+    ]
+}

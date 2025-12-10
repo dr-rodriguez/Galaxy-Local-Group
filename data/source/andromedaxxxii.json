@@ -1,0 +1,71 @@
+{
+    "Sources": [
+        {
+            "source": "AndromedaXXXII",
+            "ra_deg": 8.997499999999999,
+            "dec_deg": 51.55972222222222,
+            "epoch_year": null,
+            "equinox": "ICRS",
+            "reference": "McConnachie12",
+            "other_references": null,
+            "comments": null
+        }
+    ],
+    "ModeledParameters": [
+        {
+            "model": null,
+            "parameter": "distance modulus",
+            "value": 24.450000762939453,
+            "error": null,
+            "error_upper": 0.14000000059604645,
+            "error_lower": 0.14000000059604645,
+            "unit": null,
+            "comments": null,
+            "reference": "McConnachie12"
+        },
+        {
+            "model": null,
+            "parameter": "muVo",
+            "value": 26.399999618530273,
+            "error": null,
+            "error_upper": 0.800000011920929,
+            "error_lower": 0.800000011920929,
+            "unit": null,
+            "comments": null,
+            "reference": "McConnachie12"
+        }
+    ],
+    "Morphology": [
+        {
+            "position_angle_deg": -90.0,
+            "position_angle_error": null,
+            "position_angle_error_upper": 7.0,
+            "position_angle_error_lower": 7.0,
+            "ellipticity": 0.5,
+            "ellipticity_error": null,
+            "ellipticity_error_upper": 0.09000000357627869,
+            "ellipticity_error_lower": 0.09000000357627869,
+            "half_light_radius_arcmin": 6.5,
+            "half_light_radius_error": null,
+            "half_light_radius_error_upper": 1.2000000476837158,
+            "half_light_radius_error_lower": 1.0,
+            "adopted": true,
+            "comments": null,
+            "reference": "McConnachie12"
+        }
+    ],
+    "Photometry": [
+        {
+            "band": "Generic/Johnson.V",
+            "magnitude": 12.199999809265137,
+            "magnitude_error": null,
+            "magnitude_error_upper": 0.699999988079071,
+            "magnitude_error_lower": 0.699999988079071,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "McConnachie12",
+            "regime": null
+        }
+    ]
+}
