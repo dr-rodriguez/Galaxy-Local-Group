@@ -238,3 +238,6 @@ for row in t:
                 with db.engine.connect() as conn:
                     conn.execute(db.ModeledParameters.insert().values(modeled_parameters_data))
                     conn.commit()
+
+# Export database to JSON
+db.save_database(directory="data")
