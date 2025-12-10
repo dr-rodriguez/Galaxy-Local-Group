@@ -1,0 +1,152 @@
+{
+    "Sources": [
+        {
+            "source": "CanesVenatici(1)",
+            "ra_deg": 202.01458333333332,
+            "dec_deg": 33.55583333333333,
+            "epoch_year": null,
+            "equinox": "ICRS",
+            "reference": "McConnachie12",
+            "other_references": null,
+            "comments": null
+        }
+    ],
+    "ModeledParameters": [
+        {
+            "model": null,
+            "parameter": "MHI",
+            "value": 0.0,
+            "error": null,
+            "error_upper": null,
+            "error_lower": null,
+            "unit": null,
+            "comments": null,
+            "reference": "McConnachie12"
+        },
+        {
+            "model": null,
+            "parameter": "distance modulus",
+            "value": 21.690000534057617,
+            "error": null,
+            "error_upper": 0.10000000149011612,
+            "error_lower": 0.10000000149011612,
+            "unit": null,
+            "comments": null,
+            "reference": "McConnachie12"
+        },
+        {
+            "model": null,
+            "parameter": "metallicity",
+            "value": -1.9800000190734863,
+            "error": null,
+            "error_upper": 0.009999999776482582,
+            "error_lower": 0.009999999776482582,
+            "unit": null,
+            "comments": null,
+            "reference": "McConnachie12"
+        },
+        {
+            "model": null,
+            "parameter": "muVo",
+            "value": 27.100000381469727,
+            "error": null,
+            "error_upper": 0.20000000298023224,
+            "error_lower": 0.20000000298023224,
+            "unit": null,
+            "comments": null,
+            "reference": "McConnachie12"
+        },
+        {
+            "model": null,
+            "parameter": "sigma_g",
+            "value": 0.0,
+            "error": null,
+            "error_upper": 0.0,
+            "error_lower": 0.0,
+            "unit": null,
+            "comments": null,
+            "reference": "McConnachie12"
+        },
+        {
+            "model": null,
+            "parameter": "sigma_s",
+            "value": 7.599999904632568,
+            "error": null,
+            "error_upper": 0.4000000059604645,
+            "error_lower": 0.4000000059604645,
+            "unit": null,
+            "comments": null,
+            "reference": "McConnachie12"
+        },
+        {
+            "model": null,
+            "parameter": "vrot_g",
+            "value": 0.0,
+            "error": null,
+            "error_upper": 0.0,
+            "error_lower": 0.0,
+            "unit": null,
+            "comments": null,
+            "reference": "McConnachie12"
+        }
+    ],
+    "Morphology": [
+        {
+            "position_angle_deg": 70.0,
+            "position_angle_error": null,
+            "position_angle_error_upper": 4.0,
+            "position_angle_error_lower": 4.0,
+            "ellipticity": 0.38999998569488525,
+            "ellipticity_error": null,
+            "ellipticity_error_upper": 0.029999999329447746,
+            "ellipticity_error_lower": 0.029999999329447746,
+            "half_light_radius_arcmin": 8.899999618530273,
+            "half_light_radius_error": null,
+            "half_light_radius_error_upper": 0.4000000059604645,
+            "half_light_radius_error_lower": 0.4000000059604645,
+            "adopted": true,
+            "comments": null,
+            "reference": "McConnachie12"
+        }
+    ],
+    "Photometry": [
+        {
+            "band": "Generic/Johnson.V",
+            "magnitude": 13.100000381469727,
+            "magnitude_error": null,
+            "magnitude_error_upper": 0.20000000298023224,
+            "magnitude_error_lower": 0.20000000298023224,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "McConnachie12",
+            "regime": null
+        }
+    ],
+    "ProperMotions": [
+        {
+            "pm_ra": -0.10999999940395355,
+            "pm_ra_error": null,
+            "pm_ra_error_upper": 0.019999999552965164,
+            "pm_ra_error_lower": 0.019999999552965164,
+            "pm_dec": -0.11999999731779099,
+            "pm_dec_error": null,
+            "pm_dec_error_upper": 0.019999999552965164,
+            "pm_dec_error_lower": 0.019999999552965164,
+            "adopted": true,
+            "comments": null,
+            "reference": "McConnachie12"
+        }
+    ],
+    "RadialVelocities": [
+        {
+            "rv_kms": 30.899999618530273,
+            "rv_error": null,
+            "rv_error_upper": 0.6000000238418579,
+            "rv_error_lower": 0.6000000238418579,
+            "adopted": true,
+            "comments": null,
+            "reference": "McConnachie12"
+        }
+    ]
+}

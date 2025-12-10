@@ -1,0 +1,79 @@
+{
+    "Sources": [
+        {
+            "source": "HIZSS3(A)",
+            "ra_deg": 105.12208333333331,
+            "dec_deg": -4.208333333333334,
+            "epoch_year": null,
+            "equinox": "ICRS",
+            "reference": "McConnachie12",
+            "other_references": null,
+            "comments": null
+        }
+    ],
+    "ModeledParameters": [
+        {
+            "model": null,
+            "parameter": "MHI",
+            "value": 14.0,
+            "error": null,
+            "error_upper": null,
+            "error_lower": null,
+            "unit": null,
+            "comments": null,
+            "reference": "McConnachie12"
+        },
+        {
+            "model": null,
+            "parameter": "distance modulus",
+            "value": 26.1200008392334,
+            "error": null,
+            "error_upper": 0.14000000059604645,
+            "error_lower": 0.14000000059604645,
+            "unit": null,
+            "comments": null,
+            "reference": "McConnachie12"
+        },
+        {
+            "model": null,
+            "parameter": "vrot_g",
+            "value": 42.0,
+            "error": null,
+            "error_upper": 4.0,
+            "error_lower": 4.0,
+            "unit": null,
+            "comments": null,
+            "reference": "McConnachie12"
+        }
+    ],
+    "Morphology": [
+        {
+            "position_angle_deg": null,
+            "position_angle_error": null,
+            "position_angle_error_upper": null,
+            "position_angle_error_lower": null,
+            "ellipticity": null,
+            "ellipticity_error": null,
+            "ellipticity_error_upper": null,
+            "ellipticity_error_lower": null,
+            "half_light_radius_arcmin": null,
+            "half_light_radius_error": null,
+            "half_light_radius_error_upper": null,
+            "half_light_radius_error_lower": null,
+            "adopted": true,
+            "comments": null,
+            "reference": "McConnachie12"
+        }
+    ],
+    "RadialVelocities": [
+        {
+            "rv_kms": 288.0,
+            "rv_error": null,
+            "rv_error_upper": 2.5,
+            "rv_error_lower": 2.5,
+            "adopted": true,
+            "comments": null,
+            "reference": "McConnachie12"
+        }
+    ]
+}
