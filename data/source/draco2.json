@@ -1,18 +1,17 @@
 {
     "Sources": [
         {
-            "source": "Draco 2",
+            "source": "Draco2",
             "ra_deg": 238.198333,
             "dec_deg": 64.565278,
             "equinox": "ICRS",
             "reference": "McConnachie12",
-            "other_references": "Rubin80",
             "comments": null
         }
     ],
     "Morphology": [
         {
-            "source": "Draco 2",
+            "source": "Draco2",
             "position_angle_deg": 76.0,
             "position_angle_error_upper": 22.0,
             "position_angle_error_lower": 32.0,
