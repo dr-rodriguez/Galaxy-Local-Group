@@ -8,9 +8,7 @@ lookup_tables = [
     "PhotometryFilters",
     "Versions",
     "RegimeList",
-    "AssociationList",
     "SourceTypeList",
     "ParameterList",
-    "CompanionList"
     ]
     
