@@ -14,5 +14,29 @@
     {
         "parameter": "distance modulus",
         "description": "Distance modulus of the source"
+    },
+    {
+        "parameter": "muVo",
+        "description": "missing description"
+    },
+    {
+        "parameter": "sigma_s",
+        "description": "missing description"
+    },
+    {
+        "parameter": "vrot_s",
+        "description": "missing description"
+    },
+    {
+        "parameter": "MHI",
+        "description": "missing description"
+    },
+    {
+        "parameter": "sigma_g",
+        "description": "missing description"
+    },
+    {
+        "parameter": "vrot_g",
+        "description": "missing description"
     }
 ]
